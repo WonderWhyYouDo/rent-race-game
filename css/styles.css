@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #D2A679, #FFD700); /* Gradient background */
+    color: #fff; /* White text */
+}
+
+#banner-image {
+    display: block;
+    margin: 20px auto;
+    max-width: 600px; /* Same width as game container */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.9); /* Enhanced gold shadow */
+}
+
+#game-container {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 600px;
+    background-color: #111; /* Darker background for the container */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.9); /* Enhanced gold shadow */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transition for hover effect */
+    position: relative;
+}
+
+#game-container:hover {
+    transform: scale(1.05); /* Scale up on hover */
+    box-shadow: 0 0 30px rgba(255, 215, 0, 1); /* Brighter shadow on hover */
+}
+
+#landlord-image, #victory-image, #game-over-image {
+    display: none; /* Hidden by default */
+    max-width: 600px; /* Same width as game container */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.9); /* Enhanced gold shadow */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+#status p {
+    font-size: 18px;
+}
+
+#actions button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #c9a0dc; /* Purple color from provided image */
+    color: #000; /* Black text */
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s; /* Transition for hover effect */
+}
+
+#actions button:hover {
+    background-color: #a980b7; /* Darker shade of purple for hover effect */
+    transform: translateY(-5px); /* Move up slightly on hover */
+}
+
+#summary {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+#summary .event {
+    color: gold;
+    font-weight: bold;
+}
+
+#summary .rugged {
+    color: red;
+    font-weight: bold;
+}
+
+#paid-months {
+    margin-top: 20px;
+}
+
+#paid-months-list {
+    list-style: none;
+    padding: 0;
+}
+
+#paid-months-list li {
+    font-size: 18px;
+    color: gold;
+}
+
+.checkmark {
+    font-weight: bold;
+    color: gold;
+}
+
+/* Modal Styles */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent black */
+    padding-top: 60px; 
+}
+
+.modal-content {
+    background-color: #222; /* Darker background for modal */
+    margin: 5% auto; 
+    padding: 20px;
+    border: 1px solid gold; /* Gold border */
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.9); /* Enhanced gold shadow */
+}
+
+.investment-option, .loan-option {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #c9a0dc; /* Purple color from provided image */
+    color: #000; /* Black text */
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s; /* Transition for hover effect */
+}
+
+.investment-option:hover, .loan-option:hover {
+    background-color: #a980b7; /* Darker shade of purple for hover effect */
+    transform: translateY(-5px); /* Move up slightly on hover */
+}

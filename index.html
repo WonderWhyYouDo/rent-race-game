@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent Race: Surviving Landlord Ronald</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <img id="banner-image" src="assets/banner.jpg" alt="Landlord Ronald Banner">
+    <div id="game-container">
+        <h1>Rent Race: Surviving Landlord Ronald</h1>
+        <div id="status">
+            <p id="balance">Balance: $100</p>
+            <p id="rent-due">Rent Due: $1400</p>
+            <p id="current-day">Day: 1</p>
+            <p id="current-month">Month: 1</p>
+            <p id="loan-status">Loan: $0</p>
+        </div>
+        <div id="actions">
+            <button id="work-job">Work Job</button>
+            <button id="invest-crypto">Invest in Crypto</button>
+            <button id="pay-rent">Pay Rent</button>
+            <button id="take-loan">Take Loan</button>
+        </div>
+        <div id="summary"></div>
+        <div id="paid-months">
+            <h2>Paid Months</h2>
+            <ul id="paid-months-list"></ul>
+        </div>
+    </div>
+    <img id="landlord-image" src="assets/boysclub.jpg" alt="Landlord Ronald">
+    <img id="victory-image" src="assets/winner.jpg" alt="Victory" style="display: none;">
+	<img id="game-over-image" src="assets/eviction.jpg" alt="Game Over" style="display: none;">
+    
+    <!-- Investment Modal -->
+    <div id="investment-modal" class="modal">
+        <div class="modal-content">
+            <h2>Choose Investment Amount</h2>
+            <button class="investment-option" data-amount="100">$100</button>
+            <button class="investment-option" data-amount="250">$250</button>
+            <button class="investment-option" data-amount="500">$500</button>
+            <button class="investment-option" data-amount="1000">$1000</button>
+            <button id="close-investment-modal">Cancel</button>
+        </div>
+    </div>
+
+    <!-- Loan Modal -->
+    <div id="loan-modal" class="modal">
+        <div class="modal-content">
+            <h2>Choose Loan Amount and Duration</h2>
+            <button class="loan-option" data-amount="500" data-duration="3">Loan $500 for 3 months</button>
+            <button class="loan-option" data-amount="1000" data-duration="6">Loan $1000 for 6 months</button>
+            <button class="loan-option" data-amount="2000" data-duration="12">Loan $2000 for 12 months</button>
+            <button id="close-loan-modal">Cancel</button>
+        </div>
+    </div>
+
+    <script src="js/game.js"></script>
+</body>
+</html>
