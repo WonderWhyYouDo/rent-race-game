@@ -29,16 +29,12 @@ body {
     box-shadow: 0 0 30px rgba(255, 215, 0, 1); /* Brighter shadow on hover */
 }
 
-#boysclub-image, #victory-image, #game-over-image {
-    display: none; /* Hidden by default */
+#landlord-image {
+    display: block;
+    margin: 20px auto;
     max-width: 600px; /* Same width as game container */
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(255, 215, 0, 0.9); /* Enhanced gold shadow */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1000;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.7); /* Gold shadow */
 }
 
 #status p {

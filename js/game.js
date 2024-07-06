@@ -1,4 +1,24 @@
 document.addEventListener("DOMContentLoaded", () => {
+    const tutorialModal = document.getElementById("tutorial-modal");
+    const openTutorialButton = document.getElementById("open-tutorial");
+    const closeTutorialButton = document.getElementById("close-tutorial-modal");
+
+    openTutorialButton.addEventListener("click", () => {
+        tutorialModal.style.display = "block";
+    });
+
+    closeTutorialButton.addEventListener("click", () => {
+        tutorialModal.style.display = "none";
+    });
+
+    window.addEventListener("click", (event) => {
+        if (event.target === tutorialModal) {
+            tutorialModal.style.display = "none";
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
     const balanceElement = document.getElementById("balance");
     const rentDueElement = document.getElementById("rent-due");
     const currentDayElement = document.getElementById("current-day");
@@ -8,7 +28,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const paidMonthsListElement = document.getElementById("paid-months-list");
     const investmentModal = document.getElementById("investment-modal");
     const loanModal = document.getElementById("loan-modal");
-	const tutorialModal = document.getElementById("tutorial-modal");
 	const victoryImage = document.getElementById("victory-image");
 	const gameOverImage = document.getElementById("game-over-image");
 
