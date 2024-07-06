@@ -29,7 +29,7 @@ body {
     box-shadow: 0 0 30px rgba(255, 215, 0, 1); /* Brighter shadow on hover */
 }
 
-#landlord-image, #victory-image, #game-over-image {
+#boysclub-image, #victory-image, #game-over-image {
     display: none; /* Hidden by default */
     max-width: 600px; /* Same width as game container */
     border-radius: 10px;
@@ -118,6 +118,24 @@ body {
     width: 80%;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(255, 215, 0, 0.9); /* Enhanced gold shadow */
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #c9a0dc; /* Purple color from provided image */
+    color: #000; /* Black text */
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s; /* Transition for hover effect */
+}
+
+button:hover {
+    background-color: #a980b7; /* Darker shade of purple for hover effect */
+    transform: translateY(-5px); /* Move up slightly on hover */
+
 }
 
 .investment-option, .loan-option {

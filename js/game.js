@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const paidMonthsListElement = document.getElementById("paid-months-list");
     const investmentModal = document.getElementById("investment-modal");
     const loanModal = document.getElementById("loan-modal");
+	const tutorialModal = document.getElementById("tutorial-modal");
 	const victoryImage = document.getElementById("victory-image");
 	const gameOverImage = document.getElementById("game-over-image");
 
@@ -121,6 +122,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function provideMonthlySummary() {
         summaryElement.innerHTML = `<span class="event">Monthly Summary: You have $${balance.toFixed(2)} and rent due is $${rentDue.toFixed(2)}.</span>`;
+    }
+
+	function disableButtons() {
+		document.getElementById("work-job").disabled = true;
+        document.getElementById("invest-crypto").disabled = true;
+        document.getElementById("pay-rent").disabled = true;
+        document.getElementById("take-loan").disabled = true;
+	}
+	
+	function checkForWin() {
+        if (currentMonth === 12 && rentDue === 0) {
+            summaryElement.innerHTML = '<h2 style="color: gold;">YOU WIN! CONGRATULATIONS!</h2>';
+            victoryImage.style.display = 'block';
+            disableButtons();
+        }
     }
 
     document.getElementById("work-job").addEventListener("click", () => {

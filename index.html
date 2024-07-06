@@ -22,6 +22,7 @@
             <button id="invest-crypto">Invest in Crypto</button>
             <button id="pay-rent">Pay Rent</button>
             <button id="take-loan">Take Loan</button>
+            <button id="open-tutorial">Tutorial</button>
         </div>
         <div id="summary"></div>
         <div id="paid-months">
@@ -30,8 +31,8 @@
         </div>
     </div>
     <img id="victory-image" src="assets/winner.jpg" alt="Victory" style="display: none;">
-	<img id="game-over-image" src="assets/eviction.jpg" alt="Game Over" style="display: none;">
-	<img id="boysclub-image" src="assets/boysclub.jpg" alt="Boys Club" style="display: block; margin: 20px auto; max-width: 600px; border-radius: 10px; box-shadow: 0 0 20px rgba(255, 215, 0, 0.9);">
+    <img id="game-over-image" src="assets/eviction.jpg" alt="Game Over" style="display: none;">
+    <img id="boysclub-image" src="assets/boysclub.jpg" alt="Boys Club" style="display: block; margin: 20px auto; max-width: 600px; border-radius: 10px; box-shadow: 0 0 20px rgba(255, 215, 0, 0.9);">
     
     <!-- Investment Modal -->
     <div id="investment-modal" class="modal">
@@ -53,6 +54,30 @@
             <button class="loan-option" data-amount="1000" data-duration="6">Loan $1000 for 6 months</button>
             <button class="loan-option" data-amount="2000" data-duration="12">Loan $2000 for 12 months</button>
             <button id="close-loan-modal">Cancel</button>
+        </div>
+    </div>
+
+    <!-- Tutorial Modal -->
+    <div id="tutorial-modal" class="modal">
+        <div class="modal-content">
+            <h2>Tutorial</h2>
+            <p>Welcome to "Rent Race: Surviving Landlord Ronald". Here's how to play:</p>
+            <ul>
+                <li>Objective: Survive 12 months by paying rent on time while managing your daily expenses and income.</li>
+                <li>Starting Balance: You start with $100.</li>
+                <li>Daily Activities:
+                    <ul>
+                        <li>Work Job: Earn $112 per day. Click "Work Job" to work and advance the day.</li>
+                        <li>Invest in Crypto: Choose an amount to invest. You can multiply your investment or lose it.</li>
+                        <li>Pay Rent: Pay rent on or before the 5th of each month to avoid late fees and eviction.</li>
+                        <li>Take Loan: Choose a loan amount and duration. Loans have a 10% interest rate per month.</li>
+                    </ul>
+                </li>
+                <li>Monthly Summary: A summary is provided at the end of each month.</li>
+                <li>Game Over: If you can't pay rent by the 5th, you get evicted and it's game over.</li>
+                <li>Win Condition: Successfully pay rent for all 12 months to win.</li>
+            </ul>
+            <button id="close-tutorial-modal">Close</button>
         </div>
     </div>
 
